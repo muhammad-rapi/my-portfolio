@@ -5,6 +5,7 @@
   margin: 0;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -81,6 +82,31 @@ nav ul a {
   background-color: rgba(255, 255, 255, 0.795);
   transition: 0.5s;
   z-index: 999;
+}
+
+/* Hamburger menu animation */
+
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, 0);
+  background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+  background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
 }
 
 /* last navbar */
@@ -538,12 +564,13 @@ footer ul {
 
   .header {
     margin-bottom: 100px;
-    left: 0;
   }
 
   .header-content {
     width: 100%;
+    margin-right: 100px;
     top: 100px;
+    left: 60px;
   }
 
   .header-p {
@@ -568,7 +595,7 @@ footer ul {
   }
 
   .about img {
-    width: 40%;
+    width: 55%;
   }
 
   .skills {
@@ -622,6 +649,10 @@ footer ul {
     position: static;
     margin: 50px 0;
     font-size: 2rem;
+  }
+  nav ul.slide {
+    transform: translateX(0);
+    opacity: 1;
   }
 
   /* .skills {
