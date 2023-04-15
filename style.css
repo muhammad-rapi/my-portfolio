@@ -16,7 +16,6 @@ body {
 body {
   background-color: #16161a;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 /* navbar */
@@ -133,13 +132,10 @@ nav ul a {
 }
 
 .header-content {
-  /* background-color: red; */
-  /* width: 30%; */
   width: 400px;
   position: absolute;
   left: 100px;
   margin-bottom: 80px;
-  z-index: 99;
 }
 
 .header-content span {
@@ -558,15 +554,11 @@ footer ul i {
     justify-content: space-evenly;
     z-index: -1;
     width: 100%;
-    transition: all 1s;
+    transition: all 0.8s;
     opacity: 0;
     padding-left: 50px;
     height: 50px;
     color: #131313;
-  }
-
-  body {
-    overflow-x: hidden;
   }
 
   .menu-toggle {
@@ -589,16 +581,16 @@ footer ul i {
   }
 
   .header-p {
-    bottom: 60px;
+    bottom: 100px;
     position: absolute;
-    width: 60%;
-    left: 90px;
+    width: 250px;
+    left: 60px;
   }
 
   .header img {
-    width: 50%;
+    width: 60%;
     position: absolute;
-    top: 270px;
+    top: 300px;
   }
 
   .about {
@@ -687,15 +679,7 @@ footer ul i {
   footer ul li i {
     font-size: 0.5rem;
   }
-
-  /* .skills {
-      flex-direction: column;
-    }
-
-    .card {
-      width: 50%;
-      font-size: 0.5rem;
-    } */
 }
 
 /* last responsive media query */
+
