@@ -133,7 +133,6 @@ nav ul a {
   position: absolute;
   left: 100px;
   margin-bottom: 80px;
-  z-index: 99;
 }
 
 .header-content span {
