@@ -168,51 +168,51 @@ nav ul a {
 }
 
 /* .typewriter h1 {
-  overflow: hidden;
-  border-right: 0.1em solid #94a1b2;
-  white-space: nowrap;
-  margin: 0 auto;
-  animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
-  animation-iteration-count: infinite;
-} */
+    overflow: hidden;
+    border-right: 0.1em solid #94a1b2;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation-iteration-count: infinite;
+  } */
 
 /* @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-} */
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  } */
 
 /* @keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #94a1b2;
+    }
   }
-  50% {
-    border-color: #94a1b2;
-  }
-}
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-  50% {
-    animation-timing-function: steps(40, end);
-  }
-  51% {
-    animation-timing-function: steps(40, start);
-    width: 100%;
-  }
-  to {
-    width: 0%;
-  }
- } */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+    50% {
+      animation-timing-function: steps(40, end);
+    }
+    51% {
+      animation-timing-function: steps(40, start);
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  } */
 
 /* last header */
 
@@ -544,18 +544,17 @@ footer ul i {
 @media screen and (max-width: 576px) {
   nav ul {
     position: absolute;
-    right: 0;
-    top: 0;
-    height: 100vh;
+    top: -110%;
     flex-direction: column;
-    align-items: center;
-    background-color: #2e2d31;
+    background-color: #131313;
     justify-content: space-evenly;
-    z-index: 1;
-    width: 70%;
-    transform: translateX(100%);
+    z-index: -1;
+    width: 100%;
     transition: all 1s;
-    opacity: 1;
+    opacity: 0;
+    padding-left: 50px;
+    height: 50px;
+    color: #131313;
   }
 
   body {
@@ -659,8 +658,10 @@ footer ul i {
     font-size: 2rem;
   }
   nav ul.slide {
-    transform: translateX(0);
+    top: 105%;
+    height: 300px;
     opacity: 1;
+    background-color: #2e2d31;
   }
 
   footer {
@@ -680,13 +681,13 @@ footer ul i {
   }
 
   /* .skills {
-    flex-direction: column;
-  }
+      flex-direction: column;
+    }
 
-  .card {
-    width: 50%;
-    font-size: 0.5rem;
-  } */
+    .card {
+      width: 50%;
+      font-size: 0.5rem;
+    } */
 }
 
 /* last responsive media query */
