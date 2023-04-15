@@ -11,7 +11,6 @@
 body {
   background-color: #16161a;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 /* navbar */
@@ -552,6 +551,10 @@ footer ul {
     transform: translateX(100%);
     transition: all 1s;
     opacity: 1;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 
   .menu-toggle {
