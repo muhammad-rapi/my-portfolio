@@ -11,7 +11,11 @@
 body {
   background-color: #16161a;
   box-sizing: border-box;
-  position : relative;
+}
+
+.flow {
+  overflow: hidden;
+  position: relative;
 }
 
 /* navbar */
