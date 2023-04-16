@@ -512,6 +512,7 @@ footer ul i {
     width: 350px;
     /* top: 100px;
     left: 60px; */
+    margin-left: 10px;
     position: static;
     margin-bottom: 0;
   }
