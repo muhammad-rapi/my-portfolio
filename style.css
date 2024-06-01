@@ -480,19 +480,21 @@ footer ul {
 
     .header {
         margin:0;
-        justify-content: space-evenly;
-        flex-direction: column;
+        justify-content: center;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 50px;
     }
 
     .header-content {
-        width: 350px;
-        /* top: 100px;
-    left: 60px; */
         margin-left: 10px;
         position: static;
         margin-bottom: 0;
+    }
+
+    .header-content p {
+        width: 50%;
+
     }
 
     .header-p {
@@ -509,9 +511,11 @@ footer ul {
 
     .about {
         flex-direction: column;
+        justify-content:center;
+        gap: 3rem;
     }
 
-    .about-content {
+    .about-content, {
         width: 80%;
     }
 
