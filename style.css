@@ -117,6 +117,10 @@ nav ul a {
     margin-bottom: 80px;
 }
 
+.header-content p {
+    width: 430px;
+}
+
 .header-content span {
     color: #94a1b2;
 }
@@ -487,21 +491,12 @@ footer ul {
     }
 
     .header-content {
-        margin-left: 10px;
-        position: static;
+        margin-left: 25px;
         margin-bottom: 0;
     }
 
-    .header-content p {
-        width: 50%;
-
-    }
-
-    .header-p {
-        /* position: absolute;
-    left: 60px; */
-        position: static;
-        width: 250px;
+    .header-content p{
+        width: 90%;
     }
 
     .header img {
@@ -512,14 +507,16 @@ footer ul {
     .about {
         flex-direction: column;
         justify-content:center;
+        padding-bottom:100px ;
         gap: 3rem;
     }
 
-    .about-content, {
+    .about-content{
         width: 80%;
     }
 
     .about img {
+        margin-top: 100px;
         width: 55%;
     }
 
